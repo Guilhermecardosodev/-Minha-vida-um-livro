@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Livros</title>
+    
+    
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('fundoclassico.avif'); 
+    background-repeat: repeat; /* Impede a repetição da imagem */
+    background-size: cover; /* Redimensiona a imagem para cobrir todo o elemento */
+    
+
+        }
+        header {
+            background-image: url('gold.jpg'); background-size: cover; 
+            color: white; text-align:justify ; padding: 1rem;
+            color: white;
+            text-align: center;
+            padding: 8rem;
+        }
+        nav {
+            background-color: #686767;
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 3rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .post {
+            margin-bottom: 2rem;
+            border-bottom: 15px solid #555555;
+            padding-bottom: 1rem;
+        }
+        .post h2 {
+            margin-top: 0;
+        }
+
+/* esse css é do newsletter, remover ao por o site no ar...................................................... */
+        .popup {
+    display:contents ;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    background-image: url('bglivros.png');
+    background-repeat: repeat; /* Impede a repetição da imagem */
+    background-size: cover; 
+    justify-content: center;
+    align-items: center;
+}  
+
+/* posição do popup */
+        .popup-content {
+    background-color: white;
+    padding:  1px 0 0;
+    text-align: center;
+    position: relative;
+}
+
+        /* botao X do newsletter */
+        .close-btn {
+        color: rgb(250, 247, 47);
+        background-color: rgb(71, 71, 71);
+        padding: 5px 10px; /* Adicione preenchimento para tornar o botão mais visível e fácil de clicar */
+        border: none;
+        cursor: pointer;
+        border-radius: 5px; /* Adicione borda arredondada */
+        font-weight: bold;
+        font-size: 16px;
+    }
+   
+    /* espaço entre o botao e a barra de email */
+#newsletter-form {
+    margin-top: 10px;
+}
+
+#email {
+    padding: 5px;
+    width: 10%;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #0c0c0c;
+    color: rgb(240, 234, 234);
+    border: none;
+    cursor: pointer;
+}
+
+/* esse css acima é do newsletter, remover ao por o site no ar...................................................... */
+
+
+    </style>
+</head>
+
+
+
+
+<body>
+    <header>
+        <h1></h1>
+    </header>
+    
+    <nav>
+        <a href="#" onmouseover="this.style.fontSize='22px'; this.style.color='#EEE8AA';"
+         onmouseout="this.style.fontSize='15px'; this.style.color='#000000';"
+          style="display: inline; margin: 0 15px ; text-transform: uppercase; color: #000000;
+           font-weight: bold; font-size: 15px; text-decoration: none;"></a>  <!-- sem uso por enquanto -->
+
+
+
+
+        
+        <a href="resenhaslista.html" onmouseover="this.style.fontSize='22px'; this.style.color='#EEE8AA';"
+          onmouseout="this.style.fontSize='15px'; this.style.color='#000000';"
+           style="display: inline; margin: 0 15px ; text-transform: uppercase; color: #000000; 
+           font-weight: bold; font-size: 15px; text-decoration: none;">Resenhas</a>
+
+
+        <a href="novidades.html" onmouseover="this.style.fontSize='22px'; this.style.color='#EEE8AA';"
+          onmouseout="this.style.fontSize='15px'; this.style.color='#000000';"
+            style="display: inline; margin: 0 15px ; text-transform: uppercase; color: #000000; 
+            font-weight: bold; font-size: 15px; text-decoration: none;">Notícias</a>
+
+
+        <a href="https://www.estantevirtual.com.br/" onmouseover="this.style.fontSize='22px'; this.style.color='#EEE8AA';"
+        onmouseout="this.style.fontSize='15px'; this.style.color='#000000';"
+        style="display: inline; margin: 0 15px; text-transform: uppercase; color: #000000;
+        font-weight: bold; font-size: 15px; text-decoration: none;">Store/Sebo</a>
+
+        <a href="sobre.html" onmouseover="this.style.fontSize='22px'; this.style.color='#EEE8AA';"
+          onmouseout="this.style.fontSize='15px'; this.style.color='#000000';"
+          style="display: inline; margin: 0 15px ; text-transform: uppercase; color: #000000;
+           font-weight: bold; font-size: 15px; text-decoration: none;">Sobre </a>
+     
+        <a href="contato.html" onmouseover="this.style.fontSize='22px'; this.style.color='#EEE8AA';"
+          onmouseout="this.style.fontSize='15px'; this.style.color='#000000';"
+          style="display: inline; margin: 0 15px; text-transform: uppercase; color: #000000;
+           font-weight: bold; font-size: 15px; text-decoration: none;">Contato</a>
+
+        
+
+    
+    
+    
+     <hr>
+     <a href="https://www.linkedin.com/in/guilhermecardosodev/" 
+       onmouseover="this.style.fontSize='22px'; this.style.color='#EEE8AA';"
+       onmouseout="this.style.fontSize='15px'; this.style.color='#000000';"
+       style="display:right; margin: 0; text-transform: uppercase; color: #000000; font-weight: bold; font-size: 15px; text-decoration: none;">
+        <img src="linkedin.png" alt="LinkedIn" style="vertical-align: bottom; width: 20px; height: 20px; margin-right: 40px;"> <!-- Imagem do LinkedIn -->    
+    </a>
+                  
+    <a href="https://www.tiktok.com/@suburbanoconvicto11" 
+    onmouseover="this.style.fontSize='22px'; this.style.color='#EEE8AA';"
+    onmouseout="this.style.fontSize='15px'; this.style.color='#000000';"
+    style="display:right; margin: 0; text-transform: uppercase; color: #000000; font-weight: bold; font-size: 15px; text-decoration: none;">
+     <img src="tik.png" alt="LinkedIn" style="vertical-align: bottom; width: 20px; height: 20px; margin-right: 40px;"> <!-- Imagem do LinkedIn -->    
+    </a>
+    
+    <a href="https://api.whatsapp.com/send?phone=5511966310929"
+    onmouseover="this.style.fontSize='22px'; this.style.color='#EEE8AA';"
+    onmouseout="this.style.fontSize='15px'; this.style.color='#000000';"
+    style="display:right; margin: 0; text-transform: uppercase; color: #000000; font-weight: bold; font-size: 15px; text-decoration: none;">
+     <img src="whats.png" alt="LinkedIn" style="vertical-align: bottom; width: 20px; height: 20px; margin-right: 40px;"> <!-- Imagem do LinkedIn -->    
+    </a>
+    
+
+</nav>
+
+
+    <div class="container">
+        
+        <div class="post">
+            <h2>Sejam todos bem vindos!</h2>
+            <p>"Seja bem-vindo ao meu cantinho literário! Aqui, assim como <I>Machado de Assis</I> desvendou as complexidades da mente humana, vamos explorar entre páginas e letras os infinitos mundos que os livros têm a nos oferecer. Sinta-se à vontade para mergulhar nessa jornada literária comigo!"</p>
+            <a href="sobre.html">"Tudo o que temos de decidir é o que fazer com o tempo que nos é dado...</a>
+        </div>
+
+
+        <div class="post">
+            <h2>Resenha: O Pequeno príncipe
+                </h2>
+            <p>A obra é um conto filosófico fabuloso que em 1943 tornou o 
+                escritor francês Antoine de Saint-Exupery famoso em todo o mundo. 
+                Ao mesmo tempo, o livro se tornou um best-seller e foi vendido em 200 
+                milhões de cópias em todo o mundo. 
+                Até o momento, foi traduzido para 301 idiomas.</p>
+            <a href="resenhas.html">
+                Bora lá...</a>
+        </div>
+
+        <div class="post">
+            <h2>Escolha uma obra para ler no inverno: veja novidades literárias
+                </h2>
+            <p>Com o frio chegando, um programa ideal é colocar a leitura em dia embaixo das cobertas. Confira as recomendações de livros sobre temas como expressão musical e direitos autorais, e ainda uma obra de poesia. Confira a lista de novidades!</p>
+            <a href="novidades.html">
+                Bora lá...</a>
+        </div>
+        <!-- Adicione mais posts aqui -->
+    </div>
+
+</main>
+    
+<footer style="text-align: center; background: url('footer.jpg') repeat; color: white; padding: 1rem;">
+        <p>&copy; 2023 Minha vida é um livro. Todos os direitos reservados.</p>
+        developed by <span style="color: #FF0000; font-family: 'Arial', sans-serif; font-size: 15px;">White.Mouse.dev</span>
+
+    </footer>
+
+
+
+    
+
+<!--  cria newsletter -->
+<div id="newsletter-popup" class="popup">
+    <div class="popup-content">
+        
+        <button class="close-btn" onclick="closePopup()" style="cursor: pointer;"><b>×</b></button>
+
+        <h2>Assine nossa Newsletter</h2>
+        <p>Receba as últimas atualizações por email.</p>
+        <form id="newsletter-form" onsubmit="sendEmail(event)">
+            <input type="email" id="email" placeholder="Seu email" required>
+            <button type="submit" style="cursor: pointer;">Inscrever-se</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Abra a popup assim que a página carregar
+    document.addEventListener("DOMContentLoaded", function() {
+        var popupShown = localStorage.getItem("popupShown");
+        if (!popupShown) {
+            openPopup();
+        }
+    });
+
+</script>
+
+ <!--  popup deve funcionar corretamente ao ser clicado. -->
+<script>
+    function closePopup() {
+        var popup = document.getElementById("newsletter-popup");
+        popup.style.display = "none";
+        localStorage.setItem("popupShown", "true");
+    }
+</script>
+
+<script src="JavaScriptnews.js"></script>
+</body>
+</html>
+
+
+
+
+

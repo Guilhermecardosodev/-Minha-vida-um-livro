@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resenhas</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('bglivros.png'); 
+    background-repeat: repeat; /* Impede a repetição da imagem */
+    background-size: cover; /* Redimensiona a imagem para cobrir todo o elemento */
+    
+        }
+        header {
+            background-image: url('minhavida.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 9rem 0;
+        }
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 1px 0;
+        }
+        nav a {
+            color: #ffee00;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin: 0 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ff6b6b;
+            color: white;
+        }
+        main {
+            padding: 2rem;
+        }
+        h2 {
+            font-family: Helvetica;
+        }
+        p {
+            font-family: Dancing Script;
+        }
+        b {
+            font-size: 1.25rem;
+        }
+        hr {
+            margin: 1.5rem 0;
+        }
+        .sugestoes-button {
+            color: rgb(255, 238, 0);
+            text-decoration: none;
+            background-color: #333;
+            padding: 5px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .sugestoes-button:hover {
+            background-color: #ff6b6b;
+            color: white;
+        }
+        .image-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 1px;
+            flex-wrap: wrap;
+        }
+        .image-list li {
+            flex: 1;
+            margin: 10px;
+            max-width: calc(15% - 0px);
+            text-align: center;
+        }
+        .image-list img {
+            border: 1px solid #EEE8AA;
+            max-width: 100%;
+        }
+        footer {
+            text-align: center;
+            background: url('footer.jpg') repeat;
+            color: white;
+            padding: 1rem;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <header>
+        <h1 style="margin: 1; color: #ff0000; text-shadow: 2px 2px 5px rgba(3, 49, 252, 0.5);"><font size="15"><!-- espaço resr --></font></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="index.html" class="nav-link">Página Inicial</a>
+            <a href="novidades.html" class="nav-link">Notícias</a>
+            <a href="https://www.estantevirtual.com.br/" class="nav-link">Nossa Loja</a>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Confira Nossas Resenhas!</h2>
+        <p><b>Você está prestes a embarcar em uma jornada literária incrível!<br>
+        Nossas resenhas são cheias de emoção, detalhes e pitadas de magia.<br>
+        Venha se perder nas palavras e deixe sua imaginação voar.</b></p>
+        <hr>
+        <div>
+            <p><b>Queremos ouvir suas opiniões e sugestões também!<br>
+            Cada sugestão sua é como um ingrediente especial que acrescentamos às nossas resenhas.<br>
+            Portanto, não seja tímido, compartilhe suas ideias conosco!</b></p>
+            <p><b>Aproveite a leitura e divirta-se explorando mundos literários!</b></p>
+            <p><b>"No final da resenha tem o <img src="pdf.jpg" alt="Capa do Livro" style="max-width: 2%;"> de cada obra, gratuito pra você!"</b></p>
+        </div>
+        
+        <a href="contato.html" class="sugestoes-button">Sugestões</a>
+        <hr>
+        
+        <h3>Nossas Resenhas!</h3>
+        <ul class="image-list">
+            <li>
+                <a href="resenhas.html">
+                    <img src="prince.jpg" alt="Imagem 1">
+                </a>
+            </li>
+            <li>
+                <a href="revolucao.html">
+                    <img src="revoluçao.jpg" alt="Imagem 2">
+                </a>
+            </li>
+            <li>
+                <a href="metamorfose">
+                    <img src="kafka.jpg" alt="Imagem 3">
+                </a>
+            </li>
+            <li>
+                <a href="1984.html">
+                    <img src="1984.jpg" alt="Imagem 4">
+                </a>
+            </li>
+            <!-- Adicione mais imagens à lista -->
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Minha vida é um livro. Todos os direitos reservados.</p>
+        developed by <span style="color: #FF0000; font-family: 'Arial', sans-serif; font-size: 15px;">White.Mouse.dev</span>
+
+    </footer>
+        
+</body>
+</html>

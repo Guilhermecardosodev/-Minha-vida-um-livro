@@ -1,0 +1,52 @@
+/* nao estou usando por enquanto...................................................... */
+.popup {
+    display:contents ;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    background-image: url('bglivros.png');
+    background-repeat: repeat; /* Impede a repetição da imagem */
+    background-size: cover; 
+    justify-content: center;
+    align-items: center;
+}  
+
+/* posição do popup */
+        .popup-content {
+    background-color: white;
+    padding:  1px 0 0;
+    text-align: center;
+    position: relative;
+}
+
+        /* botao X do newsletter */
+        .close-btn {
+        color: rgb(250, 247, 47);
+        background-color: rgb(71, 71, 71);
+        padding: 5px 10px; /* Adicione preenchimento para tornar o botão mais visível e fácil de clicar */
+        border: none;
+        cursor: pointer;
+        border-radius: 5px; /* Adicione borda arredondada */
+        font-weight: bold;
+        font-size: 16px;
+    }
+   
+    /* espaço entre o botao e a barra de email */
+#newsletter-form {
+    margin-top: 10px;
+}
+
+#email {
+    padding: 5px;
+    width: 10%;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #0c0c0c;
+    color: rgb(240, 234, 234);
+    border: none;
+    cursor: pointer;
+}
+
